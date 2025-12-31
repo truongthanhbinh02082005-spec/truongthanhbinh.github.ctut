@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân - Giới thiệu bản thân, dự án, thành tích và hoạt động">
+    <title>Portfolio | Trang Chủ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="./logo.png" alt="Logo" style="height: 40px;"></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Giới Thiệu</a></li>
+                <li><a href="projects.html">Dự Án</a></li>
+                <li><a href="achievements.html">Thành Tích</a></li>
+                <li><a href="activities.html">Giấy Khen</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-fadeInUp">
+                <h1>Xin Chào, Tôi Là <span class="gradient-text" style="white-space: nowrap;">Trương Thanh Bình</span>
+                </h1>
+                <p class="subtitle">
+                    Sinh viên ngành Khoa học dữ liệu khóa 2023 <br>
+                    tại trường Đại học kỹ thuật - công nghệ Cần Thơ.
+                </p>
+                <div class="btn-group">
+                    <a href="projects.html" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        Xem Dự Án
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Liên Hệ
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-fadeInUp animate-delay-2">
+                <div class="image-wrapper">
+                    <img src="avt.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Về <span class="gradient-text">Tôi</span></h2>
+                <p>Đam mê khám phá dữ liệu và tạo ra giá trị từ thông tin</p>
+            </div>
+
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    Xin chào! Tôi là sinh viên Khoa học Dữ liệu với niềm đam mê phân tích và khai thác dữ liệu.
+                    Tôi yêu thích việc biến những con số thô thành insights có giá trị, xây dựng các mô hình
+                    Machine Learning để giải quyết bài toán thực tế. Với tư duy logic và khả năng phân tích,
+                    tôi luôn tìm kiếm những thách thức mới trong lĩnh vực Data Science và AI.
+                </p>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Dự Án Hoàn Thành</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Tháng Kinh Nghiệm</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Vinh Danh</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Hoạt Động</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kỹ Năng <span class="gradient-text">Chuyên Môn</span></h2>
+                <p>Những công nghệ và kỹ năng tôi đã tích lũy được</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🌐 Web Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Node.js, và các framework hiện đại</p>
+                    <div class="card-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>� Data Analyst</h3>
+                    <p>Phân tích dữ liệu với Python, SQL, Power BI và các công cụ BI</p>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Power BI</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>🗃️ Database Design</h3>
+                    <p>Thiết kế và quản lý cơ sở dữ liệu với PostgreSQL, MySQL</p>
+                    <div class="card-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/truong.binh.278211/?locale=vi_VN" class="social-link" title="Facebook"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/b%C3%ACnh-tr%C6%B0%C6%A1ng-27a504279/" class="social-link"
+                    title="LinkedIn" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://github.com/truongthanhbinh02082005-spec" class="social-link" title="GitHub"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+            </div>
+            <p style="margin-top: var(--spacing-md);">© 2024 Trương Thanh Bình. I love CTUT ❤️</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

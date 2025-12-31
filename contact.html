@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với tôi - Portfolio cá nhân">
+    <title>Portfolio | Liên Hệ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="./logo.png" alt="Logo" style="height: 40px;"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Giới Thiệu</a></li>
+                <li><a href="projects.html">Dự Án</a></li>
+                <li><a href="achievements.html">Thành Tích</a></li>
+                <li><a href="activities.html">Giấy Khen</a></li>
+                <li><a href="contact.html" class="active">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Liên Hệ <span class="gradient-text">Với Tôi</span></h1>
+            <p>Hãy kết nối với tôi qua các kênh dưới đây</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl);">
+
+                <!-- Contact Info -->
+                <div class="card">
+                    <h3 style="margin-bottom: var(--spacing-lg);">📬 Thông Tin Liên Hệ</h3>
+
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                        <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                            <span style="font-size: 1.5rem;">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p style="color: var(--text-secondary); margin: 0;">truongthanhbinh02082005@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                            <span style="font-size: 1.5rem;">📱</span>
+                            <div>
+                                <strong>Điện Thoại</strong>
+                                <p style="color: var(--text-secondary); margin: 0;">0878 468 342</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                            <span style="font-size: 1.5rem;">📍</span>
+                            <div>
+                                <strong>Địa Chỉ</strong>
+                                <p style="color: var(--text-secondary); margin: 0;">Ô Môn, Cần Thơ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md);">🌐 Mạng Xã Hội</h4>
+                    <div class="social-links" style="justify-content: flex-start;">
+                        <a href="https://www.facebook.com/truong.binh.278211/?locale=vi_VN" class="social-link"
+                            title="Facebook" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/b%C3%ACnh-tr%C6%B0%C6%A1ng-27a504279/" class="social-link"
+                            title="LinkedIn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/truongthanhbinh02082005-spec" class="social-link" title="GitHub"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card">
+                    <h3 style="margin-bottom: var(--spacing-lg);">✉️ Gửi Tin Nhắn</h3>
+                    <form class="contact-form" style="max-width: none;">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên</label>
+                            <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Tiêu Đề</label>
+                            <input type="text" id="subject" name="subject" placeholder="Tiêu đề tin nhắn">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nội Dung</label>
+                            <textarea id="message" name="message" placeholder="Nhập nội dung tin nhắn..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Gửi Tin Nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Trương Thanh Bình. I love CTUT ❤️</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

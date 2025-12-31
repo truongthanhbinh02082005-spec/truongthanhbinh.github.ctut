@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dự án đã thực hiện - Portfolio cá nhân">
+    <title>Portfolio | Dự Án</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="./logo.png" alt="Logo" style="height: 40px;"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Giới Thiệu</a></li>
+                <li><a href="projects.html" class="active">Dự Án</a></li>
+                <li><a href="achievements.html">Thành Tích</a></li>
+                <li><a href="activities.html">Giấy Khen</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Dự Án <span class="gradient-text">Của Tôi</span></h1>
+            <p>Những dự án tôi đã thực hiện và tham gia phát triển</p>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cards-grid">
+                <!-- Project 1 -->
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+                            alt="Mô hình dự đoán Churn">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mô hình dự đoán Churn khách hàng</h3>
+                        <p>Xây dựng một giao diện web để dự đoán Churn khách hàng, từ đó gợi ý ra các gói cước phù hợp
+                            với họ.</p>
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Scikit-learn</span>
+                        </div>
+                        <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;"
+                            onclick="openModal('modal1')">
+                            Xem chi tiết >>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="card">
+                    <div class="card-image">
+                        <img src="PR2.jpg" alt="Logistics System">
+                    </div>
+                    <div class="card-content">
+                        <h3>Hệ thống định tuyến đường đi Logistics</h3>
+                        <p>Xây dựng hệ thống tối ưu hóa đường đi cho xe vận chuyển, giảm chi phí và thời gian giao hàng.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">OR-Tools</span>
+                        </div>
+                        <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;"
+                            onclick="openModal('modal2')">
+                            Xem chi tiết >>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Project 3 - Đang phát triển -->
+                <article class="card card-developing">
+                    <div class="card-image developing-placeholder">
+                        <div class="loading-spinner"></div>
+                        <span>Đang phát triển...</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>🚧 Đang Phát Triển</h3>
+                        <p>Dự án mới đang trong quá trình phát triển. Sẽ cập nhật sớm!</p>
+                        <div class="card-tags">
+                            <span class="tag">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 - Đang phát triển -->
+                <article class="card card-developing">
+                    <div class="card-image developing-placeholder">
+                        <div class="loading-spinner"></div>
+                        <span>Đang phát triển...</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>🚧 Đang Phát Triển</h3>
+                        <p>Dự án mới đang trong quá trình phát triển. Sẽ cập nhật sớm!</p>
+                        <div class="card-tags">
+                            <span class="tag">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 - Đang phát triển -->
+                <article class="card card-developing">
+                    <div class="card-image developing-placeholder">
+                        <div class="loading-spinner"></div>
+                        <span>Đang phát triển...</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>🚧 Đang Phát Triển</h3>
+                        <p>Dự án mới đang trong quá trình phát triển. Sẽ cập nhật sớm!</p>
+                        <div class="card-tags">
+                            <span class="tag">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 - Đang phát triển -->
+                <article class="card card-developing">
+                    <div class="card-image developing-placeholder">
+                        <div class="loading-spinner"></div>
+                        <span>Đang phát triển...</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>🚧 Đang Phát Triển</h3>
+                        <p>Dự án mới đang trong quá trình phát triển. Sẽ cập nhật sớm!</p>
+                        <div class="card-tags">
+                            <span class="tag">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/truong.binh.278211/?locale=vi_VN" class="social-link" title="Facebook"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/b%C3%ACnh-tr%C6%B0%C6%A1ng-27a504279/" class="social-link"
+                    title="LinkedIn" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://github.com/truongthanhbinh02082005-spec" class="social-link" title="GitHub"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+            </div>
+            <p style="margin-top: var(--spacing-md);">© 2024 Trương Thanh Bình. I love CTUT ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Modal Project 1 -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
+            <h2>Mô hình dự đoán Churn khách hàng</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                Dự án xây dựng mô hình Machine Learning dự đoán khách hàng rời bỏ dịch vụ viễn thông.
+                Sử dụng thuật toán Rừng ngẫu nhiên (Random Forest) để phân loại và đạt độ chính xác cao.
+                Giao diện web Flask cho phép nhập thông tin khách hàng và nhận kết quả dự đoán real-time,
+                kèm theo gợi ý các gói cước phù hợp để giữ chân khách hàng.
+            </p>
+
+            <h4 style="margin-bottom: 1rem;">📸 Hình ảnh dự án</h4>
+            <div class="modal-gallery">
+                <img src="Dự án 1.png" alt="Giao diện chính">
+                <img src="Dự án 1-3.png" alt="Dashboard phân tích">
+            </div>
+
+            <h4 style="margin: 1.5rem 0 1rem;">🛠️ Công nghệ sử dụng</h4>
+            <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Random Forest</span>
+                <span class="tag">HTML/CSS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Project 2 -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
+            <h2>Hệ thống định tuyến đường đi Logistics</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                Xây dựng ứng dụng giải quyết bài toán định tuyến đường đi bằng giải thuật OR-Tools
+                giúp doanh nghiệp tiết kiệm thời gian và chi phí vận chuyển. Cùng với đó là
+                áp dụng thuật toán Balo (Knapsack) cho bài toán tối ưu kho bãi và sức chứa xe vận chuyển.
+            </p>
+
+            <h4 style="margin-bottom: 1rem;">📸 Hình ảnh dự án</h4>
+            <div class="modal-gallery">
+                <img src="Dự án 2-3.png">
+                <img src="Dự án 2-4.png">
+                <img src="Dự án 2.png">
+                <img src="Dự án 2-1.png">
+                <img src="Dự án 2-2.png">
+            </div>
+
+            <h4 style="margin: 1.5rem 0 1rem;">🛠️ Công nghệ sử dụng</h4>
+            <div class="card-tags">
+                <span class="tag">React</span>
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">OR-Tools</span>
+                <span class="tag">Knapsack Algorithm</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox phóng to ảnh -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-img" src="" alt="Phóng to ảnh">
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script>
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Lightbox phóng to ảnh
+        function openLightbox(imgSrc) {
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        // Click ảnh trong modal-gallery để phóng to
+        document.querySelectorAll('.modal-gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                openLightbox(img.src);
+            });
+        });
+
+        // Click vào lightbox để đóng
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('lightbox') || e.target === document.getElementById('lightbox-img')) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+
+</html>
