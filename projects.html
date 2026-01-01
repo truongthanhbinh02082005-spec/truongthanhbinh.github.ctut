@@ -45,8 +45,7 @@
                 <!-- Project 1 -->
                 <article class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
-                            alt="Mô hình dự đoán Churn">
+                        <img src="Dự án 1 nền.png" alt="Mô hình dự đoán Churn">
                     </div>
                     <div class="card-content">
                         <h3>Mô hình dự đoán Churn khách hàng</h3>
@@ -72,7 +71,8 @@
                     </div>
                     <div class="card-content">
                         <h3>Hệ thống định tuyến đường đi Logistics</h3>
-                        <p>Xây dựng hệ thống tối ưu hóa đường đi cho xe vận chuyển, giảm chi phí và thời gian giao hàng.
+                        <p>Giải quyết bài toán Vehicle Routing Problem (VRP) trong logistics - tìm lộ trình tối ưu cho
+                            đội xe vận chuyển, giúp doanh nghiệp tiết kiệm chi phí và thời gian.
                         </p>
                         <div class="card-tags">
                             <span class="tag">React</span>
@@ -88,18 +88,26 @@
                     </div>
                 </article>
 
-                <!-- Project 3 - Đang phát triển -->
-                <article class="card card-developing">
-                    <div class="card-image developing-placeholder">
-                        <div class="loading-spinner"></div>
-                        <span>Đang phát triển...</span>
+                <!-- Project 3 -->
+                <article class="card">
+                    <div class="card-image">
+                        <img src="Dự án 3.png" alt="Hệ thống quản lý phòng Net">
                     </div>
                     <div class="card-content">
-                        <h3>🚧 Đang Phát Triển</h3>
-                        <p>Dự án mới đang trong quá trình phát triển. Sẽ cập nhật sớm!</p>
+                        <h3>Hệ thống quản lý phòng Net B65</h3>
+                        <p>Xây dựng hệ thống quản lý phòng Net hiện đại, theo dõi thời gian sử dụng và tính tiền tự
+                            động.
+                        </p>
                         <div class="card-tags">
-                            <span class="tag">Coming Soon</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
                         </div>
+                        <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;"
+                            onclick="openModal('modal3')">
+                            Xem chi tiết >>
+                        </button>
                     </div>
                 </article>
 
@@ -196,7 +204,9 @@
             <h4 style="margin-bottom: 1rem;">📸 Hình ảnh dự án</h4>
             <div class="modal-gallery">
                 <img src="Dự án 1.png" alt="Giao diện chính">
+                <img src="Dự án 1-2.png" alt="Chi tiết dự đoán">
                 <img src="Dự án 1-3.png" alt="Dashboard phân tích">
+                <img src="Dự án 1-4.png" alt="Kết quả phân tích">
             </div>
 
             <h4 style="margin: 1.5rem 0 1rem;">🛠️ Công nghệ sử dụng</h4>
@@ -217,9 +227,15 @@
             <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
             <h2>Hệ thống định tuyến đường đi Logistics</h2>
             <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
-                Xây dựng ứng dụng giải quyết bài toán định tuyến đường đi bằng giải thuật OR-Tools
-                giúp doanh nghiệp tiết kiệm thời gian và chi phí vận chuyển. Cùng với đó là
-                áp dụng thuật toán Balo (Knapsack) cho bài toán tối ưu kho bãi và sức chứa xe vận chuyển.
+                Trong thế giới logistics hiện đại, việc tìm ra lộ trình tối ưu cho đội xe vận chuyển là bài toán
+                muôn thuở của các doanh nghiệp. Dự án này tập trung giải quyết <strong>bài toán Vehicle Routing Problem
+                    (VRP)</strong>
+                - một trong những thách thức kinh điển của tối ưu hóa tổ hợp. Bằng việc ứng dụng
+                <strong>OR-Tools</strong> của Google,
+                hệ thống có thể tìm ra lộ trình ngắn nhất, tiết kiệm chi phí nhiên liệu và thời gian giao hàng.
+                Song song đó, <strong>thuật toán Knapsack</strong> được áp dụng để tối ưu hóa sức chứa kho bãi và xe vận
+                chuyển,
+                đảm bảo mỗi chuyến xe đều mang lại hiệu quả tối đa.
             </p>
 
             <h4 style="margin-bottom: 1rem;">📸 Hình ảnh dự án</h4>
@@ -239,6 +255,40 @@
                 <span class="tag">PostgreSQL</span>
                 <span class="tag">OR-Tools</span>
                 <span class="tag">Knapsack Algorithm</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 - Hệ thống quản lý phòng Net B65 -->
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
+            <h2>Hệ thống quản lý phòng Net B65</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                Dự án xây dựng hệ thống quản lý phòng Net hoàn chỉnh, giúp chủ quán theo dõi và quản lý
+                hoạt động của các máy tính một cách hiệu quả. Hệ thống hỗ trợ <strong>tính tiền tự động</strong>
+                theo thời gian sử dụng, <strong>quản lý tài khoản khách hàng</strong>, <strong>theo dõi doanh
+                    thu</strong>
+                và <strong>báo cáo thống kê</strong> chi tiết. Giao diện được thiết kế thân thiện, dễ sử dụng,
+                phù hợp với môi trường kinh doanh phòng Net thực tế.
+            </p>
+
+            <h4 style="margin-bottom: 1rem;">📸 Hình ảnh dự án</h4>
+            <div class="modal-gallery">
+                <img src="Dự án 3-1.png" alt="Giao diện chính">
+                <img src="Dự án 3-2.png" alt="Quản lý máy">
+                <img src="Dự án 3-3.png" alt="Tính tiền">
+                <img src="Dự án 3-4.png" alt="Báo cáo">
+                <img src="Dự án 3-5.png" alt="Thống kê">
+                <img src="Dự án 3-6.png" alt="Cài đặt">
+            </div>
+
+            <h4 style="margin: 1.5rem 0 1rem;">🛠️ Công nghệ sử dụng</h4>
+            <div class="card-tags">
+                <span class="tag">React</span>
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
             </div>
         </div>
     </div>

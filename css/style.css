@@ -750,20 +750,24 @@ h4 {
 
 .modal-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-sm);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
 }
 
 .modal-gallery img {
     width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: contain;
+    height: 200px;
+    object-fit: cover;
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: var(--transition-normal);
     border: 2px solid transparent;
     background: var(--bg-card);
+}
+
+.modal-gallery img:hover {
+    border-color: var(--accent-primary);
+    transform: scale(1.02);
 }
 
 .modal-gallery img:hover {
