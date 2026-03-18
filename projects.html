@@ -8,6 +8,53 @@
     <title>Portfolio | Dự Án</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .vrp-login-notice {
+            background: #ffffff;
+            color: #1f2937;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 0.75rem 0.85rem;
+            margin-bottom: 0.9rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .vrp-login-modal-content {
+            background: #ffffff;
+            color: #111827;
+            border: 1px solid #e5e7eb;
+            max-width: 560px;
+        }
+
+        .vrp-login-list {
+            margin: 0;
+            padding-left: 1.1rem;
+        }
+
+        .vrp-login-list li {
+            margin: 0.2rem 0;
+        }
+
+        .vrp-notice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0.35rem;
+        }
+
+        .vrp-notice-table th,
+        .vrp-notice-table td {
+            border: 1px solid #d1d5db;
+            padding: 0.4rem 0.5rem;
+            text-align: left;
+            font-size: 0.92rem;
+        }
+
+        .vrp-notice-table th {
+            background: #f3f4f6;
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body>
@@ -82,7 +129,7 @@
                             <span class="tag">OR-Tools</span>
                         </div>
                         <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;"
-                            onclick="window.location.href='https://vrp-app-95c9.onrender.com/login'">
+                            onclick="openModal('modal-vrp-login')">
                             Xem chi tiết >>
                         </button>
                     </div>
@@ -252,6 +299,57 @@
         </div>
     </div>
 
+    <!-- Modal thông báo tài khoản cho dự án Logistics -->
+    <div class="modal" id="modal-vrp-login">
+        <div class="modal-content vrp-login-modal-content">
+            <button class="modal-close" onclick="closeModal('modal-vrp-login')">&times;</button>
+            <h2>Thông báo</h2>
+            <div class="vrp-login-notice">
+                Đây là tài khoản và mật khẩu user để đăng nhập sử dụng hệ thống.
+                <table class="vrp-notice-table">
+                    <thead>
+                        <tr>
+                            <th>Tài khoản</th>
+                            <th>Mật khẩu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>admin</td>
+                            <td>admin123</td>
+                        </tr>
+                        <tr>
+                            <td>taixe01</td>
+                            <td>taixe113</td>
+                        </tr>
+                        <tr>
+                            <td>taixe02</td>
+                            <td>taixe113</td>
+                        </tr>
+                        <tr>
+                            <td>taixe03</td>
+                            <td>taixe113</td>
+                        </tr>
+                        <tr>
+                            <td>taixe04</td>
+                            <td>taixe113</td>
+                        </tr>
+                        <tr>
+                            <td>taixe05</td>
+                            <td>taixe113</td>
+                        </tr>
+                        <tr>
+                            <td>taixe06</td>
+                            <td>taixe113</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%; margin-top: 0.85rem;" onclick="goToVrpApp()">Test hệ thống</button>
+        </div>
+    </div>
+
     <!-- Modal 3 - Hệ thống quản lý phòng Net B65 -->
     <div class="modal" id="modal3">
         <div class="modal-content">
@@ -294,6 +392,13 @@
 
     <script src="./js/main.js"></script>
     <script>
+        const VRP_LOGIN_URL = 'https://vrp-app-95c9.onrender.com/login';
+
+        function goToVrpApp() {
+            window.open(VRP_LOGIN_URL, '_blank');
+            closeModal('modal-vrp-login');
+        }
+
         // Modal functions
         function openModal(modalId) {
             document.getElementById(modalId).classList.add('active');
